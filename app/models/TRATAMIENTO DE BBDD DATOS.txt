@@ -1,0 +1,1 @@
+Tengo que ponerle a la base de datos los mismos campos de los nombres de la entrada de datos ( los id ).
