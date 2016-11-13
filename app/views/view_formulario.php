@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html><head>
-<meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Agenda</title>
-<link href="../assets/css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
 <script type="text/javascript" src="../assets/js/agenda.js"></script>
  <link rel="stylesheet" href="../assets/css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
  </head>
 <body>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
 <div class="container" align="center">
 
 <?php if ($errores) :?>

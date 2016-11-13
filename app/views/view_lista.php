@@ -7,11 +7,10 @@
     <script type="text/javascript" src="../assets/js/agenda.js"></script>
     <link rel="stylesheet" href="../assets/css/estilos.css">
     <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
 <div class="container" align="center">
 
     <h1>Ofertas disponibles</h1>
@@ -54,19 +53,23 @@
                                               </td>                               
                   </tr>';
                 } ?>
-
-
-
             </table>
         </form>
 
-        <?php
+        <footer align="center">
+            <P>
+                <?php if ($pagina>1): ?>
+                    <a href="?ctrl=ctr_lista&pagina=<?=$pagina-1?>"><input class="btn btn-primary" type="button"  value ="Atras"></a>
+                <?php endif; ?>
 
 
+                <?php if ($pagina<$total_paginas) :?>
+                    <a href="?ctrl=ctr_lista&pagina=<?=$pagina+1?>"><input class="btn btn-primary" type="button"  value ="Siguiente"></a>
+                <?php endif;?>
+            </P>
+        </footer>
 
-        ?>
-
-</div>
+    </div>
 </div>
 </body>
 </html>

@@ -2,6 +2,7 @@
   include_once __DIR__ . "/../helper/filtrado.php";
   include_once __DIR__ . "/../helper/helper.php";
   require_once __DIR__ . "/../models/bda_ofertasmodelo.php";
+  include_once __DIR__ . "/../models/bda_select.php";
 
   if (! $_POST){
 
