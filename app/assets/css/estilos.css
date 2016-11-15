@@ -1,0 +1,28 @@
+/* Estilo del div del menu */
+.menu{
+float:left;
+width:8em;
+height:6em;
+border-radius: 3px;
+border:1px solid #aaa;
+background: #FFFFFFFF;
+margin-right: 1em;
+margin-bottom: 2em;
+
+}
+
+/* Estilo del div de los botones del menú */
+
+.botonesmenu{
+width: 8em;
+margin-bottom: 7%;
+
+}
+
+.borrar{
+
+
+
+
+
+}

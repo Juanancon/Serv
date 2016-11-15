@@ -85,7 +85,7 @@ Class Db {
             }
             $result=$this->result;
         }
-        $this->regActual=$result->fetch_array();
+        $this->regActual=$result->fetch_assoc();
         return $this->regActual;
     }
 

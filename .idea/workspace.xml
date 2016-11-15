@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9911b26b-ddb5-410c-ba0e-1b271bc93387" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/config.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/Filtrado de datos y vistas.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/indexx.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/TRATAMIENTO DE BBDD DATOS.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/css/estilos.css" afterPath="$PROJECT_DIR$/app/assets/css/estilos.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ctr_alta.php" afterPath="$PROJECT_DIR$/app/controllers/ctr_alta.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ctr_borrar.php" afterPath="$PROJECT_DIR$/app/controllers/ctr_borrar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/ctr_modificar.php" afterPath="$PROJECT_DIR$/app/controllers/ctr_modificar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helper/filtrado.php" afterPath="$PROJECT_DIR$/app/helper/filtrado.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/bda_ofertasmodelo.php" afterPath="$PROJECT_DIR$/app/models/bda_ofertasmodelo.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/bda_sg.php" afterPath="$PROJECT_DIR$/app/models/bda_sg.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/view_formulario.php" afterPath="$PROJECT_DIR$/app/views/view_formulario.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/view_lista.php" afterPath="$PROJECT_DIR$/app/views/view_lista.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/view_modificar.php" afterPath="$PROJECT_DIR$/app/views/view_modificar.php" />
@@ -29,30 +36,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ctr_lista.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ctr_lista.php">
+      <file leaf-file-name="ctr_borrar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/ctr_borrar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bda_ofertasmodelo.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bda_ofertasmodelo.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/bda_ofertasmodelo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="445">
+              <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
               <folding>
-                <marker date="1478715343844" expanded="true" signature="298:622" ph="INSERT INTO tbl_oferta... " />
-                <marker date="1478715343844" expanded="true" signature="738:783" ph="DELETE FROM " />
-                <marker date="1478715343844" expanded="true" signature="1056:1458" ph="UPDATE TBL_O... " />
-                <marker date="1478715343844" expanded="true" signature="1595:1619" ph="SELECT * FRO... tbl_oferta" />
-                <marker date="1478715343844" expanded="true" signature="1985:2015" ph="SELECT * FRO... tbl_oferta" />
-                <marker date="1478715343844" expanded="true" signature="1985:2032" ph="SELECT * FRO... tbl_oferta" />
-                <marker date="1478715343844" expanded="true" signature="1985:2033" ph="SELECT * FRO... tbl_oferta" />
-                <marker date="1478715343844" expanded="true" signature="2335:2375" ph="SELECT count... tbl_oferta" />
+                <marker date="1479172414442" expanded="true" signature="298:622" ph="INSERT INTO tbl_oferta... " />
+                <marker date="1479172414442" expanded="true" signature="738:783" ph="DELETE FROM " />
+                <marker date="1479172414442" expanded="true" signature="1056:1482" ph="UPDATE TBL_O... " />
+                <marker date="1479172414442" expanded="true" signature="1619:1643" ph="SELECT * FRO... tbl_oferta" />
+                <marker date="1479172414442" expanded="true" signature="2009:2056" ph="SELECT * FRO... tbl_oferta" />
+                <marker date="1479172414442" expanded="true" signature="2359:2399" ph="SELECT count... tbl_oferta" />
+                <marker date="1479172414442" expanded="true" signature="2718:2874" ph="SELECT *, DA... tbl_oferta" />
               </folding>
             </state>
           </provider>
@@ -61,34 +67,18 @@
       <file leaf-file-name="view_lista.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/view_lista.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding>
-                <marker date="1479036668125" expanded="true" signature="1731:3012" ph="..." />
-                <marker date="1479036668125" expanded="true" signature="2089:2957" ph="..." />
-                <marker date="1479036668125" expanded="true" signature="2167:2812" ph="..." />
-                <marker date="1479036668125" expanded="true" signature="2671:2805" ph="..." />
-                <marker date="1479036668125" expanded="true" signature="2714:2805" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_formulario.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/view_formulario.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="578">
+              <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_insertado.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/view_insertado.php">
+      <file leaf-file-name="ctr_lista.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/ctr_lista.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -104,31 +94,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_modificar.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/view_modificar.php">
+      <file leaf-file-name="ctr_alta.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/ctr_alta.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexx.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/indexx.php">
+      <file leaf-file-name="ctr_modificar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/ctr_modificar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bda_sg.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/bda_sg.php">
+      <file leaf-file-name="view_borrar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/view_borrar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="1037">
+              <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -147,24 +137,32 @@
         <option value="$PROJECT_DIR$/app/views/menu.php" />
         <option value="$PROJECT_DIR$/app/controllers/entrada.php" />
         <option value="$PROJECT_DIR$/app/models/bda_sentences.php" />
-        <option value="$PROJECT_DIR$/app/controllers/ctr_borrar.php" />
         <option value="$PROJECT_DIR$/app/controllers/ctr_buscar.php" />
         <option value="$PROJECT_DIR$/app/helper/functioneshelp.php" />
-        <option value="$PROJECT_DIR$/app/models/bda_sg.php" />
-        <option value="$PROJECT_DIR$/app/helper/filtrado.php" />
-        <option value="$PROJECT_DIR$/app/assets/css/estilos.css" />
         <option value="$PROJECT_DIR$/app/views/view_insertado.php" />
         <option value="$PROJECT_DIR$/app/helper/helper.php" />
         <option value="$PROJECT_DIR$/app/models/bda_select.php" />
-        <option value="$PROJECT_DIR$/app/models/bda_ofertasmodelo.php" />
         <option value="$PROJECT_DIR$/app/controllers/ctr_lista.php" />
-        <option value="$PROJECT_DIR$/app/controllers/ctr_alta.php" />
-        <option value="$PROJECT_DIR$/app/controllers/ctr_modificar.php" />
-        <option value="$PROJECT_DIR$/app/index.php" />
-        <option value="$PROJECT_DIR$/app/views/view_lista.php" />
-        <option value="$PROJECT_DIR$/app/views/view_formulario.php" />
-        <option value="$PROJECT_DIR$/app/views/view_modificar.php" />
         <option value="$PROJECT_DIR$/app/indexx.php" />
+        <option value="$PROJECT_DIR$/app/plantilla/menu.php" />
+        <option value="$PROJECT_DIR$/app/plantilla/error404.php" />
+        <option value="$PROJECT_DIR$/app/index.php" />
+        <option value="$PROJECT_DIR$/app/controllers/ctr_alta.php" />
+        <option value="$PROJECT_DIR$/app/models/bda_sg.php" />
+        <option value="$PROJECT_DIR$/app/views/view_modificar.php" />
+        <option value="$PROJECT_DIR$/app/views/view_sehamodificado.php" />
+        <option value="$PROJECT_DIR$/app/helper/filtrado.php" />
+        <option value="$PROJECT_DIR$/app/controllers/ctr_modificar.php" />
+        <option value="$PROJECT_DIR$/app/assets/css/estilos.css" />
+        <option value="$PROJECT_DIR$/app/views/view_formulario.php" />
+        <option value="$PROJECT_DIR$/app/views/view_borrar.php" />
+        <option value="$PROJECT_DIR$/app/views/borradohecho.php" />
+        <option value="$PROJECT_DIR$/app/views/view_borradohecho.php" />
+        <option value="$PROJECT_DIR$/app/controllers/ctr_borrar.php" />
+        <option value="$PROJECT_DIR$/app/views/view_lista.php" />
+        <option value="$PROJECT_DIR$/app/controllers/ctr_info.php" />
+        <option value="$PROJECT_DIR$/app/views/view_info.php" />
+        <option value="$PROJECT_DIR$/app/models/bda_ofertasmodelo.php" />
       </list>
     </option>
   </component>
@@ -176,10 +174,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="14" />
-    <option name="width" value="988" />
-    <option name="height" value="1025" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1284" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -206,59 +204,55 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SRV1EV" />
+              <option name="myItemId" value="Practica Servidor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SRV1EV" />
+              <option name="myItemId" value="Practica Servidor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SRV1EV" />
+              <option name="myItemId" value="Practica Servidor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SRV1EV" />
+              <option name="myItemId" value="Practica Servidor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SRV1EV" />
+              <option name="myItemId" value="Practica Servidor" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="install" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Practica Servidor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Practica Servidor" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SRV1EV" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SRV1EV" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -333,24 +327,32 @@
       <workItem from="1478841209234" duration="535000" />
       <workItem from="1478862342716" duration="3823000" />
       <workItem from="1478969319500" duration="3424000" />
-      <workItem from="1479035666002" duration="4717000" />
+      <workItem from="1479035666002" duration="13139000" />
+      <workItem from="1479076588178" duration="6206000" />
+      <workItem from="1479115284319" duration="8953000" />
+      <workItem from="1479131760206" duration="6987000" />
+      <workItem from="1479144796596" duration="2358000" />
+      <workItem from="1479147696422" duration="4716000" />
+      <workItem from="1479152516033" duration="694000" />
+      <workItem from="1479171120828" duration="1291000" />
+      <workItem from="1479220240404" duration="21000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55947000" />
+    <option name="totallyTimeSpent" value="95595000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="14" width="988" height="1025" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1284" height="1000" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25617284" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13012618" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -379,85 +381,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/view_formulario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2278">
-          <caret line="134" column="24" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/view_lista.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1479036668125" expanded="true" signature="1731:3012" ph="..." />
-            <marker date="1479036668125" expanded="true" signature="2089:2957" ph="..." />
-            <marker date="1479036668125" expanded="true" signature="2167:2812" ph="..." />
-            <marker date="1479036668125" expanded="true" signature="2671:2805" ph="..." />
-            <marker date="1479036668125" expanded="true" signature="2714:2805" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/bda_select.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
-          <folding>
-            <marker date="1478709441535" expanded="true" signature="254:282" ph="SELECT * FRO... TBL_PROVINCIAS" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/bda_sentences.php" />
-    <entry file="file://$PROJECT_DIR$/app/helper/helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helper/filtrado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helper/helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/css/estilos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/bda_sg.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/entrada.php" />
-    <entry file="file://$PROJECT_DIR$/app/controllers/filtrado.php" />
     <entry file="file://$PROJECT_DIR$/app/models/bda_select.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="43" />
-          <folding>
-            <marker date="1478709441535" expanded="true" signature="254:282" ph="SELECT * FRO... TBL_PROVINCIAS" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -467,7 +394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -478,9 +404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1478709441535" expanded="true" signature="254:282" ph="SELECT * FRO... TBL_PROVINCIAS" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -489,7 +412,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -501,48 +423,12 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/entrada.php" />
     <entry file="file://$PROJECT_DIR$/app/views/view_menu.php" />
     <entry file="file://$PROJECT_DIR$/app/helper/functioneshelp.php" />
-    <entry file="file://$PROJECT_DIR$/app/assets/css/estilos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/bda_sentences.php" />
     <entry file="file://$USER_HOME$/Downloads/provinciaspag.php" />
-    <entry file="file://$PROJECT_DIR$/app/helper/helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helper/filtrado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Funciones2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ctr_alta.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="51" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ctr_modificar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
         </state>
       </provider>
     </entry>
@@ -553,63 +439,132 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/config.php" />
+    <entry file="file://$PROJECT_DIR$/app/indexx.php" />
+    <entry file="file://$PROJECT_DIR$/app/plantilla/error404.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/plantilla/menu.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/view_modificado.php" />
+    <entry file="file://H:/PROGRAMACION/GITANEO EXTREMO/BUENO2/PracticaServidor-master/Problema1/frontal1/model/datosServidor.php" />
+    <entry file="file://H:/PROGRAMACION/GITANEO EXTREMO/BUENO2/PracticaServidor-master/Problema1/Instalador/BD.php" />
+    <entry file="file://$PROJECT_DIR$/app/models/bda_sg.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="87" column="45" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/bda_select.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <marker date="1478709441535" expanded="true" signature="254:282" ph="SELECT * FRO... TBL_PROVINCIAS" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config.php" />
-    <entry file="file://$PROJECT_DIR$/app/controllers/ctr_borrar.php">
+    <entry file="file://$PROJECT_DIR$/app/helper/filtrado.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="510">
+          <caret line="30" column="96" selection-start-line="30" selection-start-column="96" selection-end-line="30" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helper/helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="39" column="40" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/css/estilos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/view_insertado.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/view_formulario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/borradohecho.php" />
+    <entry file="file://$PROJECT_DIR$/app/views/view_borradohecho.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="646">
+          <caret line="38" column="39" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/bda_sg.php">
+    <entry file="file://$PROJECT_DIR$/app/views/view_sehamodificado.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ctr_buscar.php">
+    <entry file="file://$PROJECT_DIR$/app/views/view_modificar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ctr_alta.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/bda_ofertasmodelo.php">
+    <entry file="file://$PROJECT_DIR$/app/views/view_lista.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding>
-            <marker date="1478715343844" expanded="true" signature="298:622" ph="INSERT INTO tbl_oferta... " />
-            <marker date="1478715343844" expanded="true" signature="738:783" ph="DELETE FROM " />
-            <marker date="1478715343844" expanded="true" signature="1056:1458" ph="UPDATE TBL_O... " />
-            <marker date="1478715343844" expanded="true" signature="1595:1619" ph="SELECT * FRO... tbl_oferta" />
-            <marker date="1478715343844" expanded="true" signature="1985:2015" ph="SELECT * FRO... tbl_oferta" />
-            <marker date="1478715343844" expanded="true" signature="1985:2032" ph="SELECT * FRO... tbl_oferta" />
-            <marker date="1478715343844" expanded="true" signature="1985:2033" ph="SELECT * FRO... tbl_oferta" />
-            <marker date="1478715343844" expanded="true" signature="2335:2375" ph="SELECT count... tbl_oferta" />
-          </folding>
+        <state relative-caret-position="578">
+          <caret line="34" column="57" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/view_borrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/view_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="53" column="70" selection-start-line="53" selection-start-column="70" selection-end-line="53" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -621,29 +576,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/view_lista.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/ctr_modificar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <marker date="1479036668125" expanded="true" signature="1731:3012" ph="..." />
-            <marker date="1479036668125" expanded="true" signature="2089:2957" ph="..." />
-            <marker date="1479036668125" expanded="true" signature="2167:2812" ph="..." />
-            <marker date="1479036668125" expanded="true" signature="2671:2805" ph="..." />
-            <marker date="1479036668125" expanded="true" signature="2714:2805" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/view_formulario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/view_insertado.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/ctr_info.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ctr_buscar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -651,19 +599,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/view_modificar.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/ctr_borrar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="6" />
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/indexx.php">
+    <entry file="file://$PROJECT_DIR$/app/models/bda_ofertasmodelo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="57" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-          <folding />
+        <state relative-caret-position="445">
+          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
+          <folding>
+            <marker date="1479172414442" expanded="true" signature="298:622" ph="INSERT INTO tbl_oferta... " />
+            <marker date="1479172414442" expanded="true" signature="738:783" ph="DELETE FROM " />
+            <marker date="1479172414442" expanded="true" signature="1056:1482" ph="UPDATE TBL_O... " />
+            <marker date="1479172414442" expanded="true" signature="1619:1643" ph="SELECT * FRO... tbl_oferta" />
+            <marker date="1479172414442" expanded="true" signature="2009:2056" ph="SELECT * FRO... tbl_oferta" />
+            <marker date="1479172414442" expanded="true" signature="2359:2399" ph="SELECT count... tbl_oferta" />
+            <marker date="1479172414442" expanded="true" signature="2718:2874" ph="SELECT *, DA... tbl_oferta" />
+          </folding>
         </state>
       </provider>
     </entry>

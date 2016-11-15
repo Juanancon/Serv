@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html><head>
-<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Agenda</title>
-<link href="../assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
-<script type="text/javascript" src="../assets/js/agenda.js"></script>
- <link rel="stylesheet" href="../assets/css/estilos.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
- </head>
-<body>
 <div class="container" align="center">
 
 <?php if ($errores) :?>
@@ -20,7 +8,7 @@
      </div>
 <?php endif?>
 
-<h1>Añadir oferta laboral</h1></br></br>
+<h1>Añadir oferta laboral</h1></br>
 
  <div class="container">
 
@@ -134,21 +122,18 @@
         </div></br></br></br>
 
          <div class="form-group">
-          <label for="aceptar" class="col-lg-5 control-label"></label>
-            <div class="col-lg-3">
-                <input type="submit" NAME="aceptar" class="form-control" id="aceptar">
-            </div>
+                 <label for="aceptar" class="col-lg-5 control-label"></label>
+                 <div class="col-lg-3">
+                     <input type="submit" NAME="aceptar" class="btn btn-primary" id="aceptar" value="Aceptar"></br></br>
+                     <a href="?views=view_lista" class="btn btn-primary">Cancelar</a>
+                 </div>
 
-  </FORM>
-        </div> 
+
+      </FORM>
+ </div>
 
 
 </div>
 
-
 </form>
-
-
-</body>
-</html> 
 

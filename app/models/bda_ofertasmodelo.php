@@ -18,21 +18,21 @@ if (! defined('insertaOferta')) {
 
 }
 
-function borraOferta($cod){
+function borraOferta($Cod){
 
- $sql = 'DELETE FROM TBL_OFERTA WHERE COD = "'.$cod.'";';
+ $sql = 'DELETE FROM TBL_OFERTA WHERE Cod = "'.$Cod.'";';
 
     $bd=Db::getInstance();
     $bd->ejecutar($sql);
 
 }
-function modificaOferta($cod, $descripcion, $nombre, $telefono, $correo, $direccion, $poblacion, $CP, $provincia, $estado,
+function modificaOferta($Cod, $descripcion, $nombre, $telefono, $correo, $direccion, $poblacion, $CP, $provincia, $estado,
                         $fechatope, $psicologo, $seleccionado, $otrosdatos){
 
     $sql = 'UPDATE TBL_OFERTA SET descripcion = "'.$descripcion.'", nombre = "'.$nombre.'", telefono = "'.$telefono.'", 
-    correo = "'.$correo.'", direccion = "'.$direccion.'", poblacion = "'.$poblacion.'", CP = "'.$CP.'", 
+    correo = "'.$correo.'", direccion = "'.$direccion.'", poblacion = "'.$poblacion.'", CP = "'.$CP.'", estado = "'.$estado.'", 
     provincia = "'.$provincia.'", fechatope = "'.$fechatope.'", psicologo = "'.$psicologo.'", seleccionado = "'.$seleccionado.'", 
-    otrosdatos = "'.$otrosdatos.'" WHERE cod = "'.$cod.'";';
+    otrosdatos = "'.$otrosdatos.'" WHERE Cod = "'.$Cod.'";';
     
     $bd=Db::getInstance();
     $bd->ejecutar($sql);
@@ -91,11 +91,27 @@ function NRegistros(){
     }
 
     return $registros["total"];
+
 }
 
+function obtenerOfertaCodigo($Cod){
 
+    /*Creamos una query sencilla*/
+    $sql='SELECT *, DATE_FORMAT(fechatope, "%d/%m/%Y") as fechatope, DATE_FORMAT(fechacreacion, "%d/%m/%Y") as fechacreacion 
+FROM tbl_oferta WHERE Cod = "'. $Cod .'"';
+    $bd=Db::getInstance();
 
+    /*Ejecutamos la query ASI DEBERIA FUNCIONAR */
+    $rs=$bd->Consulta($sql);
 
+    $ofertas = [];
+    /*Realizamos un bucle para ir obteniendo los resultados*/
+    while ($reg=$bd->LeeRegistro($rs)) {
 
+        $ofertas[] = $reg;
+    }
 
+    return $ofertas;
+
+}
 

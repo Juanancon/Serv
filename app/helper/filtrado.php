@@ -2,17 +2,19 @@
 
 	//Función que nos devuelve los errores que hay
 function HayErrores(){
+
 	$error = false;
+	$filtroTLF = '/^[9|6|7][0-9]{8}$/';
+	$filtroCP = '/[0-9]{5}/';
 	$listaerrores = [];
 
 
 			// Corrigiendo, ya no tendría que poner el isset
-			if (is_numeric(VP($_POST['descripcion'])) || CampoVacio($_POST['descripcion'])) {
+			if (is_numeric(VP('descripcion')) || CampoVacio(VP('descripcion'))) { // Asi si
 			
 			$error = true;
 			$listaerrores[] = 'La descripción no puede ser un número o estar vacío';
 			}
-
 
 			if (is_numeric(VP($_POST['nombre'])) || CampoVacio($_POST['nombre'])) {
 			
@@ -24,8 +26,14 @@ function HayErrores(){
 			
 			$error = true;
 			$listaerrores[] = 'El teléfono ha de ser un número';
-			}	
+			}
 
+			if (isset($_POST['CP']) && !preg_match($filtroCP, $_POST['CP']) || strlen($_POST['CP']) != 5){
+
+			$error = true;
+			$listaerrores[] = 'El campo código postal ha de ser numérico y con 5 cifras';
+
+			}
 
 			if (CampoVacio($_POST['correo']) || !filter_var($_POST['correo'], FILTER_VALIDATE_EMAIL)) {
 			
