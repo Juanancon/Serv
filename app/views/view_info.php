@@ -39,7 +39,7 @@
             <tr>
                 <td><?php echo $row['fechacreacion']?></td>
                 <td><?php echo $row['provincia']?></td>
-                <td><?php echo $row['estado']?></td>
+                <td><?php echo devuelveEstado($row['estado'])?></td>
                 <td><?php echo $row['fechatope']?></td>
                 <td><?php echo $row['psicologo']?></td>
                 <td><?php echo $row['seleccionado']?></td>
@@ -51,7 +51,7 @@
         </table>
 
         <form class="form-horizontal" role="form" method="POST">
-            <a href="?views=view_lista" class="btn btn-primary">Volver</a>
+            <a href="?controllers=ctr_login" class="btn btn-primary">Volver</a>
         </form>
 
     </form>

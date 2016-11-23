@@ -1,9 +1,9 @@
 <?php
 //Controlador para la vista y la paginación
-include (MODELS_PATH . 'bda_select.php');
-include (MODELS_PATH . 'bda_ofertasmodelo.php');
+include_once  (MODELS_PATH . 'bda_select.php');
+include_once  (MODELS_PATH . 'bda_ofertasmodelo.php');
 
-include (HELPERS_PATH . 'helper.php');
+include_once (HELPERS_PATH . 'helper.php');
 
 /* Definiciones para la paginación */
 
@@ -39,4 +39,4 @@ include (HELPERS_PATH . 'helper.php');
 
 /* ************ */
 
-include_once (VIEWS_PATH . 'view_lista.php');
+include_once (VIEWS_PATH . 'view_PSICOlista.php');

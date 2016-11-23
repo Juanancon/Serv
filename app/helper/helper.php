@@ -47,3 +47,23 @@ function arrayOfertas($descripcion, $nombre, $telefono, $correo, $direccion, $po
 
 }
 
+function devuelveEstado($estado){
+
+ if ($estado == "A"){
+     return "Oferta aceptada";
+ }
+if ($estado == "P"){
+    return "Oferta pendiente";
+}
+if ($estado == "S") {
+
+    return "Oferta Seleccionada";
+}
+if ($estado == "C"){
+
+    return "Oferta Cancelada";
+
+    }
+
+}
+

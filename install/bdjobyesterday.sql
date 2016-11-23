@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-11-2016 a las 21:14:58
+-- Tiempo de generación: 15-11-2016 a las 17:01:50
 -- Versión del servidor: 10.1.16-MariaDB
 -- Versión de PHP: 5.6.24
 
@@ -35,7 +35,7 @@ CREATE TABLE `tbl_oferta` (
   `direccion` varchar(60) CHARACTER SET latin1 NOT NULL,
   `poblacion` varchar(55) CHARACTER SET latin1 DEFAULT NULL,
   `CP` int(10) NOT NULL,
-  `provincia` varchar(40) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `provincia` int(11) DEFAULT NULL,
   `estado` varchar(10) CHARACTER SET latin1 DEFAULT NULL,
   `fechacreacion` date DEFAULT NULL,
   `fechatope` date DEFAULT NULL,
@@ -43,6 +43,36 @@ CREATE TABLE `tbl_oferta` (
   `seleccionado` varchar(70) CHARACTER SET latin1 DEFAULT NULL,
   `otrosdatos` varchar(150) CHARACTER SET latin1 DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `tbl_oferta`
+--
+
+INSERT INTO `tbl_oferta` (`Cod`, `descripcion`, `nombre`, `telefono`, `correo`, `direccion`, `poblacion`, `CP`, `provincia`, `estado`, `fechacreacion`, `fechatope`, `psicologo`, `seleccionado`, `otrosdatos`) VALUES
+(21, 'Oferta ama casa', 'Juan', '611258987', 'a@a.com', 'C/ Trigueros', 'Monzon', 21005, 28, 'S', '2016-11-08', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(25, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 1, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(26, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 1, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(30, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 1, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(31, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 1, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(32, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 1, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(36, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 1, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(37, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(38, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(39, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(40, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(41, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(42, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(43, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(45, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(46, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(47, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(48, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(49, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(51, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(52, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'a@a.com', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(53, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(54, 'Hola', 'Juan', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(55, 'Oferta ama casa', 'Juan Antonio', '657885698', 'a@a.com', 'a@a.com', 'Palos', 21556, 21, 'R', '2016-11-15', '1970-01-01', 'Psicologo', 'Candidato', 'otros cosas');
 
 --
 -- Disparadores `tbl_oferta`
@@ -122,6 +152,19 @@ INSERT INTO `tbl_provincias` (`cod`, `nombre`, `comunidad_id`) VALUES
 ('51', 'Ceuta', 18),
 ('52', 'Melilla', 19);
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tbl_usuario`
+--
+
+CREATE TABLE `tbl_usuario` (
+  `Cod` int(10) NOT NULL,
+  `usuario` varchar(15) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `tipo` varchar(1) NOT NULL DEFAULT ''
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Índices para tablas volcadas
 --
@@ -141,6 +184,12 @@ ALTER TABLE `tbl_provincias`
   ADD KEY `FK_ComunidadAutonomaProv` (`comunidad_id`);
 
 --
+-- Indices de la tabla `tbl_usuario`
+--
+ALTER TABLE `tbl_usuario`
+  ADD PRIMARY KEY (`Cod`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -148,7 +197,12 @@ ALTER TABLE `tbl_provincias`
 -- AUTO_INCREMENT de la tabla `tbl_oferta`
 --
 ALTER TABLE `tbl_oferta`
-  MODIFY `Cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `Cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+--
+-- AUTO_INCREMENT de la tabla `tbl_usuario`
+--
+ALTER TABLE `tbl_usuario`
+  MODIFY `Cod` int(10) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

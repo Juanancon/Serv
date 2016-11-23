@@ -53,7 +53,7 @@
         <form class="form-horizontal" role="form" method="POST">
             <h2>¿Desea borrar la oferta?</h2>
                 <input type="submit" NAME="aceptar" class="btn btn-primary" id="aceptar" value="Aceptar"></br></br>
-                <a href="?views=view_lista" class="btn btn-primary">Cancelar</a>
+                <a href="?controllers=ctr_lista" class="btn btn-primary">Cancelar</a>
         </form>
 
     </form>

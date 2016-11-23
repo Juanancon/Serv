@@ -1,13 +1,14 @@
   <?php
-  include_once (HELPERS_PATH.'filtrado.php');
-  include_once (HELPERS_PATH. 'helper.php');
+  include (HELPERS_PATH.'filtrado.php');
+  include (HELPERS_PATH. 'helper.php');
   include (MODELS_PATH . 'bda_ofertasmodelo.php');
   include (MODELS_PATH . 'bda_select.php');
 
   if (! $_POST){
 
             $errores=array();
-            include_once __DIR__ . '/../views/view_formulario.php';}
+            include_once (VIEWS_PATH . 'view_formulario.php');
+  }
 
   else{
 
@@ -15,15 +16,14 @@
 
          if ($errores) {
 
-            include __DIR__ . '/../views/view_formulario.php';
+            include (VIEWS_PATH . 'view_formulario.php');
 
           }
 
           else if($errores == false){
 
 
-            include __DIR__  . '/../views/view_insertado.php';
-
+            include (VIEWS_PATH . 'view_insertado.php');
 
           	$descripcion = $_POST['descripcion'];
           	$nombre = $_POST['nombre'];
@@ -43,7 +43,7 @@
           	insertaOferta($descripcion, $nombre, $telefono, $correo, $direccion, $poblacion, $CP, $provincia, $estado,
                 $fechatope, $psicologo, $seleccionado, $otrosdatos);
 
-            include __DIR__ . '\ctr_lista.php';
+            include (CTRL_PATH . 'ctr_lista.php');
 
           	}
 

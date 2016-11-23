@@ -8,7 +8,7 @@
         </div>
     <?php endif?>
 
-    <h1>Modificar oferta laboral</h1></br>
+    <h1>Modificar oferta laboral <i>(Administrador)</i></h1></br>
 
     <div class="container">
 
@@ -34,7 +34,7 @@
 
             <div class="form-group">
                 <label for="telefono" class="col-lg-5 control-label">Teléfono de contacto</label>
-                <div class="col-lg-2">
+                <div class="col-lg-3">
                     <input type="text" NAME="telefono" class="form-control" id="telefono"
                            placeholder="Introduzca Telefono" value="<?=VP('telefono', $row['telefono'])?>">
                 </div>
@@ -42,7 +42,7 @@
 
             <div class="form-group">
                 <label for="CP" class="col-lg-5 control-label">Código Postal</label>
-                <div class="col-lg-2">
+                <div class="col-lg-3">
                     <input type="text" NAME="CP" class="form-control" id="CP"
                            placeholder="Introduzca Código Postal" value="<?=VP('CP', $row['CP'])?>">
                 </div>
@@ -66,7 +66,7 @@
 
             <div class="form-group">
                 <label for="poblacion" class="col-lg-5 control-label">Población</label>
-                <div class="col-lg-2">
+                <div class="col-lg-3">
                     <input type="poblacion" NAME="poblacion" class="form-control" id="poblacion"
                            placeholder="Introduzca poblacion" value="<?=VP('poblacion', $row['poblacion'])?>">
                 </div>
@@ -83,16 +83,14 @@
 
             <div class="form-group">
                 <label for="correo" class="col-lg-5 control-label">Estado de la oferta</label>
-                <div class="col-lg-2" align="LEFT">
-                    <?=creaSelect('estado', array('P'=>"Pendiente", 'R'=>"Realizando", 'S'=>'Seleccionando', 'C'=>'Cancelada'), VP('estado', $row['estado']))?>
-
+                <div class="col-lg-5" align="LEFT">
+                    <?=CreaRadio('estado', array('P'=>"Pendiente", 'R'=>"Realizando", 'S'=>'Seleccionando', 'C'=>'Cancelada'), VP('estado', $row['estado'])) ?>
                 </div>
             </div></br>
 
-
             <div class="form-group">
                 <label for="fechatope" class="col-lg-5 control-label">Fecha tope</label>
-                <div class="col-lg-2">
+                <div class="col-lg-4">
                     <input type="text" NAME="fechatope" class="form-control" id="fechatope"
                            placeholder="Pulse para introducir fecha" value="<?=VP('fechatope', $row['fechatope'])?>">
 
@@ -109,7 +107,7 @@
 
             <div class="form-group">
                 <label for="candidatoseleccionado" class="col-lg-5 control-label">Candidato seleccionado</label>
-                <div class="col-lg-3">
+                <div class="col-lg-4">
                     <input type="text" NAME="seleccionado" class="form-control" id="seleccionado"
                            placeholder="Introduzca datos del candidato" value="<?=VP('seleccionado', $row['seleccionado'])?>">
                 </div>
@@ -126,11 +124,11 @@
             <div class="form-group">
                 <label for="aceptar" class="col-lg-5 control-label"></label>
                 <div class="col-lg-3">
-                    <input type="submit" NAME="aceptar" class="form-control" id="aceptar">
+                    <input type="submit" NAME="aceptar" class="btn btn-primary" id="aceptar" value="Aceptar"></br></br>
+                    <a href="?views=view_lista" class="btn btn-primary">Cancelar</a>
                 </div>
 
                 <?php } ?>
-
         </FORM>
     </div>
 

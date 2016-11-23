@@ -15,7 +15,7 @@
       <form class="form-horizontal" role="form" method="POST">
 
         <div class="form-group">
-          <label for="descripcion" class="col-lg-5 control-label">Descripción de la oferta</label>
+          <label for="descripcion" class="col-lg-5 control-label">Descripción de la oferta*</label>
             <div class="col-lg-3">
               <input type="textarea" NAME="descripcion" class="form-control" id="descripcion"
                      placeholder="Descripcion" value="<?=VP('descripcion', '')?>">
@@ -23,7 +23,7 @@
         </div></br>
 
         <div class="form-group">
-          <label for="nombre" class="col-lg-5 control-label">Nombre contacto</label>
+          <label for="nombre" class="col-lg-5 control-label">Nombre contacto*</label>
             <div class="col-lg-3">
               <input type="text" NAME="nombre" class="form-control" id="nombre"
                      placeholder="Introduzca nombre de contacto" value="<?=VP('nombre', '')?>">
@@ -31,7 +31,7 @@
         </div></br>
 
         <div class="form-group">
-          <label for="telefono" class="col-lg-5 control-label">Teléfono de contacto</label>
+          <label for="telefono" class="col-lg-5 control-label">Teléfono de contacto*</label>
             <div class="col-lg-2">
               <input type="text" NAME="telefono" class="form-control" id="telefono"
                      placeholder="Introduzca Telefono" value="<?=VP('telefono', '')?>">
@@ -47,7 +47,7 @@
          </div></br>
 
         <div class="form-group">
-          <label for="correo" class="col-lg-5 control-label">Correo electrónico</label>
+          <label for="correo" class="col-lg-5 control-label">Correo electrónico*</label>
             <div class="col-lg-3">
               <input type="email" NAME="correo" class="form-control" id="correo"
                      placeholder="Introduzca Email" value="<?=VP('correo', '')?>">
@@ -65,11 +65,10 @@
         <div class="form-group">
           <label for="poblacion" class="col-lg-5 control-label">Población</label>
           <div class="col-lg-2">
-                  <input type="poblacion" NAME="poblacion" class="form-control" id="poblacion"
+                  <input type="text" NAME="poblacion" class="form-control" id="poblacion"
                    placeholder="Introduzca poblacion" value="<?=VP('poblacion', '')?>">
           </div>
         </div></br>
-
 
         <div class="form-group">
           <label for="provincias" class="col-lg-5 control-label">Provincia</label>
@@ -118,8 +117,13 @@
             <div class="col-lg-4">
                 <input type="textarea" NAME="otrosdatos" class="form-control" id="otrosdatos"
                        placeholder="Datos de interés sobre el candidato" value="<?=VP('otrosdatos', '')?>">
-            </div>
-        </div></br></br></br>
+            </div><br><br>
+
+             <div class="alert alert-warning">
+                 <strong>Advertencia:   </strong> Los campos marcados con un asterísco son obligatorios.
+             </div>
+
+        </div></br></br>
 
          <div class="form-group">
                  <label for="aceptar" class="col-lg-5 control-label"></label>
@@ -127,7 +131,6 @@
                      <input type="submit" NAME="aceptar" class="btn btn-primary" id="aceptar" value="Aceptar"></br></br>
                      <a href="?views=view_lista" class="btn btn-primary">Cancelar</a>
                  </div>
-
 
       </FORM>
  </div>

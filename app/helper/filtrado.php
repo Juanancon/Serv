@@ -16,32 +16,35 @@ function HayErrores(){
 			$listaerrores[] = 'La descripción no puede ser un número o estar vacío';
 			}
 
-			if (is_numeric(VP($_POST['nombre'])) || CampoVacio($_POST['nombre'])) {
+			if (is_numeric(VP(('nombre'))) || CampoVacio(VP('nombre'))) {
 			
 			$error = true;
 			$listaerrores[] = 'El nombre no puede ser un número estar vacío';
 			}	
 
-			if (isset($_POST['telefono']) && !is_numeric($_POST['telefono'])) {
+			if (!is_numeric(VP(('telefono'))) || CampoVacio(VP('telefono'))) {
 			
 			$error = true;
 			$listaerrores[] = 'El teléfono ha de ser un número';
 			}
 
-			if (isset($_POST['CP']) && !preg_match($filtroCP, $_POST['CP']) || strlen($_POST['CP']) != 5){
+			if (isset($_POST['CP'])){
 
-			$error = true;
-			$listaerrores[] = 'El campo código postal ha de ser numérico y con 5 cifras';
+                if (isset($_POST["CP"]) && !CampoVacio(VP("CP"))) {
+                    if (!filter_var(VP("CP"), FILTER_VALIDATE_INT) || strlen(VP("CP")) != 5) {
 
+                        $error = true;
+                        $listaerrores[] = 'El código postal ha de ser un número entero de cinco cifras';
+                    }
+				}
 			}
 
-			if (CampoVacio($_POST['correo']) || !filter_var($_POST['correo'], FILTER_VALIDATE_EMAIL)) {
+			if (CampoVacio(VP('correo')) || !filter_var($_POST['correo'], FILTER_VALIDATE_EMAIL)) {
 			
 			$error = true;
 			$listaerrores[] = 'El correo tiene caracteres inválidos o esta vacío';
 			}
 
-			//No he puesto nada en provincia porque en el creaselect no hay lugar a errores
 
 			if (is_numeric($_POST['poblacion'])) {
 			
@@ -49,10 +52,9 @@ function HayErrores(){
 			$listaerrores = 'La población tiene caracteres no puede ser un número';
 			}	
 
-			// No hace falta estado de la oferta en este filtro
 
 			if (is_numeric($_POST['fechatope']) || CampoVacio($_POST['fechatope']) || !DateTime::createFromFormat('d/m/Y',
-					$_POST['fechatope'])) {
+					$_POST['fechatope']) ) {
 					
 				$error = true;
 				$listaerrores[] = "La fecha sólo se acepta en formato 'd/m/Y' ";
@@ -76,9 +78,114 @@ function HayErrores(){
 				$error = true;
 				$listaerrores[] = "El campo 'otros datos' no puede ser un número";
 			}
+
+			/* Filtrado para la inserción del usuario */
+
+			if (CampoVacio('usuario')){
+
+				$error = true;
+				$listaerrores[] = "El nombre de usuario no puede quedar vacío";
+
+			}
+
+			if (CampoVacio('password')){
+
+				$error = true;
+				$listaerrores[] = "El campo password no puede quedar vacío";
+
+			}
+
+			if (CampoVacio('tipo')){
+
+				$error = true;
+				$listaerrores[] = "El campo tipo no puede quedar vacío";
+
+			}
 			
 			return $listaerrores;
 }
 
-?>
+function HayErroresUsuarios(){
 
+	$error = false;
+	$filtroTLF = '/^[9|6|7][0-9]{8}$/';
+	$filtroCP = '/[0-9]{5}/';
+	$listaerrores = [];
+
+	/* Filtrado para la inserción del usuario */
+
+	if (CampoVacio(VP('usuario'))){
+
+		$error = true;
+		$listaerrores[] = "El nombre de usuario no puede quedar vacío";
+
+	}
+
+	if (CampoVacio(VP('password'))){
+
+		$error = true;
+		$listaerrores[] = "El campo password no puede quedar vacío";
+
+	}
+
+	return $listaerrores;
+}
+
+
+
+function HayErroresLogin($usuario, $password, $tipo=NULL){
+
+	$error = false;
+	$listaerrores = [];
+
+	if (existe(VP('usuario'))){
+
+			if(CampoVacio(VP('password'))){
+
+				$error = true;
+				$listaerrores[] = "El nombre de usuario no puede quedar vacío";
+
+			}
+
+			if (CampoVacio(VP('usuario'))){
+
+				$error = true;
+				$listaerrores[] = "El nombre de usuario no puede quedar vacío";
+
+			}
+
+			if (CampoVacio(VP('password'))){
+
+				$error = true;
+				$listaerrores[] = "El campo password no puede quedar vacío";
+	}
+
+}
+
+else{
+
+	$error = true;
+	$listaerrores[] = "El usuario no existe";
+
+}
+
+	return $listaerrores;
+
+}
+
+function HayErroresmodificaPsico(){
+
+$error = false;
+$listaerrores = [];
+
+    if (is_numeric($_POST['otrosdatos'])) {
+
+        $error = true;
+        $listaerrores[] = "El campo 'otros datos' no puede ser un número";
+    }
+
+
+}
+
+
+?>

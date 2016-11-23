@@ -1,7 +1,6 @@
 <?php
-/**
- * Página de error. Mostramos directamente la información por comodidad
- * No recomendado para vistas medianamente trabajadas
+/*
+ Página de error.
  */
 ?>
 <h1>Error 404</h1>
