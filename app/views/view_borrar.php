@@ -31,7 +31,7 @@
                 <th>Fecha creación</th>
                 <th>Provincia</th>
                 <th>Estado</th>
-                <th>Fecha tope</th>
+                <th>Fecha comunicación</th>
                 <th>Psicologo</th>
                 <th>Seleccionado</th>
                 <th>Otros datos</th>

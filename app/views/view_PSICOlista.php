@@ -14,7 +14,7 @@
                     <th>Descripcion</th>
                     <th>Nombre</th>
                     <th>Telefono</th>
-                    <th>Fecha Tope</th>
+                    <th>Fecha Comunicación</th>
                     <th>Provincia</th>
                     <th>MODIFICAR</th>
                 </tr>

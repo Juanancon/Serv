@@ -2,6 +2,7 @@
 include (HELPERS_PATH .'filtrado.php');
 include (HELPERS_PATH . 'helper.php');
 require (MODELS_PATH . 'bda_ofertasmodelo.php');
+require  (MODELS_PATH . 'bda_usuarios.php');
 include_once (MODELS_PATH . 'bda_select.php');
 $rows = obtenerUsuarioCodigo($_GET['Cod']);
 

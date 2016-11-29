@@ -2,6 +2,7 @@
 //Controlador para la vista y la paginación
 include_once  (MODELS_PATH . 'bda_select.php');
 include_once  (MODELS_PATH . 'bda_ofertasmodelo.php');
+include_once  (MODELS_PATH . 'bda_usuarios.php');
 
 include_once (HELPERS_PATH . 'helper.php');
 

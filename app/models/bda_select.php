@@ -25,6 +25,11 @@ include_once 'bda_sg.php';
         return $provincias;
     }
 
+/**
+ * Función que nos devuelve el nombre de una provincia a partir de su código
+ * @param $cod
+ * @return mixed
+ */
     function devuelveProvincia($cod){
 
     $bd = Db::getInstance();
@@ -39,7 +44,13 @@ include_once 'bda_sg.php';
 
     }
 
-
+/**
+ * Función que nos crea un select según las opciones que existan en el array
+ * @param $name
+ * @param $opciones
+ * @param string $valorDefecto
+ * @return string
+ */
     function CreaSelect($name, $opciones, $valorDefecto=''){
         $html="\n".'<select name="'.$name.'" class="custom-select">';
         foreach($opciones as $value=>$text)
@@ -55,6 +66,13 @@ include_once 'bda_sg.php';
         return $html;
     }
 
+/**
+ * Función que crea un RadioButton con las opciones que existan en el array
+ * @param $name
+ * @param $opciones
+ * @param string $valorDefecto
+ * @return string
+ */
 function CreaRadio($name, $opciones, $valorDefecto=''){
 
     $html="\n";
@@ -75,7 +93,7 @@ function CreaRadio($name, $opciones, $valorDefecto=''){
     return $html;
 }
 
-    //Intentaremos que el campo lo saque readonly, revisar
+
 function CreaSelectPSICO($name, $opciones, $valorDefecto=''){
     $html="\n".'<select name="'.$name.'" class="custom-select" readonly>';
     foreach($opciones as $value=>$text)

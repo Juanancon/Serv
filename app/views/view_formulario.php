@@ -49,7 +49,7 @@
         <div class="form-group">
           <label for="correo" class="col-lg-5 control-label">Correo electrónico*</label>
             <div class="col-lg-3">
-              <input type="email" NAME="correo" class="form-control" id="correo"
+              <input type="text" NAME="correo" class="form-control" id="correo"
                      placeholder="Introduzca Email" value="<?=VP('correo', '')?>">
             </div>
         </div></br>
@@ -58,7 +58,7 @@
           <label for="correo" class="col-lg-5 control-label">Direccion</label>
             <div class="col-lg-3">
               <input type="text" NAME="direccion" class="form-control" id="direccion"
-                     placeholder="Introduzca Direccion" value="<?=VP('correo', '')?>">
+                     placeholder="Introduzca Direccion" value="<?=VP('direccion', '')?>">
             </div>
         </div></br>
 
@@ -80,9 +80,8 @@
 
         <div class="form-group">
           <label for="correo" class="col-lg-5 control-label">Estado de la oferta</label>
-            <div class="col-lg-2" align="LEFT">
-                <?=creaSelect('estado', array('P'=>"Pendiente", 'R'=>"Realizando", 'S'=>'Seleccionando', 'C'=>'Cancelada'), VP('estado'))?>
-
+            <div class="col-lg-5" align="LEFT">
+              <?=CreaRadio('estado', array('P'=>"Pendiente", 'R'=>"Realizando", 'S'=>'Seleccionando', 'C'=>'Cancelada'), VP('estado')) ?>
             </div>
         </div></br>
 

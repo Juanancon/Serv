@@ -72,14 +72,12 @@
                 </div>
             </div></br>
 
-
             <div class="form-group">
                 <label for="provincias" class="col-lg-5 control-label">Provincia</label>
                 <div class="col-lg-2">
                     <?=creaSelect('provincia', ListaProvincias() , VP('provincia', $row['provincia']))?>
                 </div>
             </div></br>
-
 
             <div class="form-group">
                 <label for="correo" class="col-lg-5 control-label">Estado de la oferta</label>

@@ -1,13 +1,7 @@
 <?php
-
+include 'config.php';
 // Clase encargada de gestionar las conexiones a la base de datos
 
-$db_conf=array(
-    'servidor'=>'localhost',
-    'usuario'=>'root',
-    'password'=>'',
-    'base_datos'=>'bdjobyesterday'
-);
 
 
 Class Db {

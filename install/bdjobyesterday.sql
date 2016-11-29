@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 15-11-2016 a las 17:01:50
+-- Tiempo de generación: 28-11-2016 a las 17:30:33
 -- Versión del servidor: 10.1.16-MariaDB
 -- Versión de PHP: 5.6.24
 
@@ -49,18 +49,10 @@ CREATE TABLE `tbl_oferta` (
 --
 
 INSERT INTO `tbl_oferta` (`Cod`, `descripcion`, `nombre`, `telefono`, `correo`, `direccion`, `poblacion`, `CP`, `provincia`, `estado`, `fechacreacion`, `fechatope`, `psicologo`, `seleccionado`, `otrosdatos`) VALUES
-(21, 'Oferta ama casa', 'Juan', '611258987', 'a@a.com', 'C/ Trigueros', 'Monzon', 21005, 28, 'S', '2016-11-08', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
-(25, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 1, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
-(26, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 1, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
-(30, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 1, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
-(31, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 1, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
-(32, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 1, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
-(36, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 1, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
+(21, 'Oferta ama casa', 'Juan', '611258987', 'a@a.com', 'C/ Trigueros', 'Monzon', 21005, 28, 'C', '2016-11-08', '1970-01-01', 'Psicologo', 'CANCELADA', 'CANCELADA'),
 (37, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
 (38, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
-(39, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
 (40, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
-(41, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
 (42, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
 (43, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
 (45, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
@@ -68,19 +60,14 @@ INSERT INTO `tbl_oferta` (`Cod`, `descripcion`, `nombre`, `telefono`, `correo`, 
 (47, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
 (48, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
 (49, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
-(51, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
-(52, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'a@a.com', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
 (53, 'Descripcion', 'Nombre', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
-(54, 'Hola', 'Juan', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos'),
-(55, 'Oferta ama casa', 'Juan Antonio', '657885698', 'a@a.com', 'a@a.com', 'Palos', 21556, 21, 'R', '2016-11-15', '1970-01-01', 'Psicologo', 'Candidato', 'otros cosas');
+(54, 'Hola', 'Juan', '611258987', 'a@a.com', 'C/ Trigueros', 'Palos', 21005, 14, 'P', '2016-11-09', '1970-01-01', 'Psicologo', 'Candidato', 'Otros datos');
 
 --
 -- Disparadores `tbl_oferta`
 --
-DELIMITER $$
-CREATE TRIGGER `tr_fechacrea` BEFORE INSERT ON `tbl_oferta` FOR EACH ROW SET new.fechacreacion = curdate()
-$$
-DELIMITER ;
+
+CREATE TRIGGER `tr_fechacrea` BEFORE INSERT ON `tbl_oferta` FOR EACH ROW SET new.fechacreacion = curdate();
 
 -- --------------------------------------------------------
 
@@ -166,6 +153,27 @@ CREATE TABLE `tbl_usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Volcado de datos para la tabla `tbl_usuario`
+--
+
+INSERT INTO `tbl_usuario` (`Cod`, `usuario`, `password`, `tipo`) VALUES
+(2, 'admin', '1234', 'A'),
+(3, 'juan', '1234', 'P'),
+(4, 'Pedro', '763', 'P'),
+(5, 'Pedro', '763', 'P'),
+(6, 'miguel', 'perro', 'P'),
+(10, 'admin', 'admin', 'P'),
+(13, 'wqe', 'qweqwe', 'P'),
+(14, 'sads<', 'asdasd', 'P'),
+(15, 'sads<', 'asdasd', 'P'),
+(16, 'asdasd', 'asdasdasd', 'P'),
+(17, 'asdasd', 'asdasdasd', 'P'),
+(18, 'asdasd', 'a', 'P'),
+(19, 'asdasd', 'adasd', 'P'),
+(20, 'dffdg', 'dfgggf', 'P'),
+(22, 'admin', '1234', 'A');
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -197,12 +205,12 @@ ALTER TABLE `tbl_usuario`
 -- AUTO_INCREMENT de la tabla `tbl_oferta`
 --
 ALTER TABLE `tbl_oferta`
-  MODIFY `Cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+  MODIFY `Cod` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 --
 -- AUTO_INCREMENT de la tabla `tbl_usuario`
 --
 ALTER TABLE `tbl_usuario`
-  MODIFY `Cod` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `Cod` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

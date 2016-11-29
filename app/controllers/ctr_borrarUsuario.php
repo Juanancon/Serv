@@ -3,6 +3,7 @@ include (HELPERS_PATH . 'filtrado.php');
 include (HELPERS_PATH . 'helper.php');
 include (MODELS_PATH . 'bda_ofertasmodelo.php');
 include (MODELS_PATH . 'bda_select.php');
+include (MODELS_PATH . 'bda_usuarios.php');
 $rows = obtenerUsuarioCodigo($_GET['Cod']);
 
 if (! $_POST){

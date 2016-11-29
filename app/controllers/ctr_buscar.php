@@ -5,3 +5,6 @@ include (MODELS_PATH . 'bda_ofertasmodelo.php');
 include (MODELS_PATH . 'bda_select.php');
 
 include_once (VIEWS_PATH . 'view_busqueda.php');
+
+
+

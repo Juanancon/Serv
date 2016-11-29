@@ -25,7 +25,7 @@
                     <?= $row['poblacion']?></br>
                     <strong>Provincia:</strong></br>
                     <?= devuelveProvincia($row['provincia'])?></br>
-                    <strong>Fecha tope de la oferta:</strong></br>
+                    <strong>Fecha de comunicación de la oferta:</strong></br>
                     <?= $row['fechatope']?></br>
                     <strong>Psicólogo encargado:</strong></br>
                     <?= $row['psicologo']?></br>
