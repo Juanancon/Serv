@@ -62,6 +62,7 @@ $db_conf = array(
 
 fclose($archivo);
 
+
 creaBD($servidor, $usuario, $password, $nombreBD);
 
 echo 'La instalación se ha ejecutado correctamente</br>';
