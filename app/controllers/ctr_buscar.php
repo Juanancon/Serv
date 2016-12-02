@@ -23,7 +23,6 @@ if($_SESSION['tipo']=='A' || $_SESSION['tipo']=='P') {
         $busqueda3 = $_GET['busqueda3'];
 
         if (!$_GET['CP'] == '') {
-            // Recuperar el criterio de búsqueda. SELECT CP from tbl_oferta where 21006 LIKE %21006
 
             if ($busqueda1 == 'LIKE') {
 
@@ -51,7 +50,6 @@ if($_SESSION['tipo']=='A' || $_SESSION['tipo']=='P') {
 
         if (!$_GET['telefono'] == '') {
 
-            // Recuperar el criterio de búsqueda. SELECT CP from tbl_oferta where 21006 LIKE %21006
 
             if ($busqueda2 == 'LIKE') {
 
@@ -77,7 +75,6 @@ if($_SESSION['tipo']=='A' || $_SESSION['tipo']=='P') {
 
         if (!$_GET['psicologo'] == '') {
 
-            // Recuperar el criterio de búsqueda. SELECT CP from tbl_oferta where 21006 LIKE %21006
 
             if ($busqueda3 == 'LIKE') {
 
@@ -132,8 +129,6 @@ if($_SESSION['tipo']=='A' || $_SESSION['tipo']=='P') {
         $ofertas = buscarOferta($inicio, $TAMANO_PAGINA, $criterios);
         $num_total_registros = NRegistrosBusqueda($criterios);
         $total_paginas = ceil($num_total_registros / $TAMANO_PAGINA);
-
-
 
         include_once(VIEWS_PATH . 'view_busqueda.php');
 

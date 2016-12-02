@@ -7,6 +7,8 @@ if($_SESSION['tipo']=='A') {
 
     include_once(HELPERS_PATH . 'helper.php');
 
+    $tipo = ($_SESSION["tipo"] == "A") ? "Administrador" : "Psicólogo";
+
     /* Definiciones para la paginación */
 
     // Limite del número de registros
@@ -45,6 +47,5 @@ if($_SESSION['tipo']=='A') {
 else{
 
         header('location: ?controllers=ctr_login');
-
 
     }

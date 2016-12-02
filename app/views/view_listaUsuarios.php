@@ -13,18 +13,23 @@
             <table class="table table-striped table-bordered table-hover" id="resumen">
                 <tr class="active">
                     <th>Usuario</th>
-                    <th>Password</th>
                     <th>Tipo</th>
                     <th>Opciones</th>
 
                 </tr>
                 <?php
                 //Aquí genero las tablas. Foreach
-                foreach($usuarios as $row) : ?>
+                foreach($usuarios as $row) :
+                    $tipo = ($row["tipo"] == "A") ? "Administrador" : "Psicólogo";?>
                     <tr>
                         <td><?=$row['usuario']?></td>
-                        <td><?=$row['password']?></td>
-                        <td><?php if ($row['tipo'] == 'A') {echo 'Administrador';} else {echo 'Psicólogo';}?></td>
+                        <td><?=$tipo?></td>
+                    <?php if($row['usuario']=='admin'): ?>
+                        <td>
+                            <form method="get" action="">
+                            </form>
+                        </td>
+                    <?php else:  ?>
                         <td>
                             <form method="get" action="">
                                 <input type="hidden" name="Cod" value="'.$row['Cod'].'" /> <!-- ¿Podría ser $row[0] ? -->
@@ -35,7 +40,7 @@
                             </form>
                         </td>
                     </tr>
-
+                    <?php endif; ?>
                 <?php endforeach; ?>
             </table>
         </form>

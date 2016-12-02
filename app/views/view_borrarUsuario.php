@@ -24,7 +24,7 @@
 <form class="form-horizontal" role="form" method="POST">
     <h2>¿Desea borrar el usuario?</h2>
     <input type="submit" NAME="aceptar" class="btn btn-primary" id="aceptar" value="Aceptar"></br></br>
-    <a href="?controllers=ctr_login" class="btn btn-primary">Cancelar</a>
+    <a href="?controllers=ctr_listaUsuarios" class="btn btn-primary">Cancelar</a>
 </form>
 
 </form>

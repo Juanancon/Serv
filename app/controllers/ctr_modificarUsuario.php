@@ -16,7 +16,7 @@ if (! $_POST) {
 }
 else{
 
-    $errores = HayErroresUsuarios();
+    $errores = HayErroresModUsuarios();
 
 
     if ($errores) {

@@ -1,5 +1,5 @@
 <?php
-if($_SESSION['tipo']=='A' || $_SESSION['tipo']=='P') {
+if($_SESSION['tipo']=='A') {
 //Controlador para la vista y la paginación
     include_once(MODELS_PATH . 'bda_select.php');
     include_once(MODELS_PATH . 'bda_ofertasmodelo.php');

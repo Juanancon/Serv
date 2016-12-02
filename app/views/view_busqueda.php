@@ -67,7 +67,10 @@
             <?php  endif; ?>
 
             <?php
-            //Aquí genero las tablas. Foreach
+            if(isset($num_total_registros) && $num_total_registros == 0): ?>
+            <h1 align="center">¡No se han encontrado registros.!</h1>
+            <?php endif; ?>
+            <?php
             if(isset($ofertas) && $total_paginas>0):
                 foreach($ofertas as $row) : ?>
                 <tr>

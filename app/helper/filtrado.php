@@ -151,36 +151,87 @@ $listaerrores = [];
     return $listaerrores;
 }
 
-function HayErroresUsuarios(){
+function HayErroresModUsuarios()
+{
 
-	$error = false;
-	$listaerrores = [];
+    $error = false;
+    $listaerrores = [];
 
+    if (CampoVacio(VP('password'))) {
 
-	if (CampoVacio(VP('usuario'))){
+        $error = true;
+        $listaerrores[] = "El campo password no puede quedar vacío";
 
-		$error = true;
-		$listaerrores[] = "El nombre de usuario no puede quedar vacío";
+    }
 
-	}
-
-	if (CampoVacio(VP('password'))){
-
-		$error = true;
-		$listaerrores[] = "El campo password no puede quedar vacío";
-
-	}
-
-	if ($_POST['tipo'] == ''){
+    if ($_POST['tipo'] == '') {
 
         $error = true;
         $listaerrores[] = "Elija el tipo de usuario";
 
     }
 
-	return $listaerrores;
+    if (CampoVacio(VP('usuario'))) {
+
+        $error = true;
+        $listaerrores[] = "El nombre de usuario no puede quedar vacío";
+
+    }
+
+    $datos = obtenerUsuarioCodigo($_GET["Cod"]);
+    foreach ($datos as $dato) {
+        $regs = $dato;
+    }
+
+    if (usuariosRepetidos($_POST['usuario']) == true && $_POST["usuario"] != $regs["usuario"]) {
+
+        $error = true;
+        $listaerrores[] = "El nombre de usuario no puede estar repetido";
+
+    }
+
+    return $listaerrores;
+
 }
 
+function HayErroresUsuarios()
+{
+
+    $error = false;
+    $listaerrores = [];
+
+    if (CampoVacio(VP('password'))) {
+
+        $error = true;
+        $listaerrores[] = "El campo password no puede quedar vacío";
+
+    }
+
+    if ($_POST['tipo'] == '') {
+
+        $error = true;
+        $listaerrores[] = "Elija el tipo de usuario";
+
+    }
+
+    if (CampoVacio(VP('usuario'))) {
+
+        $error = true;
+        $listaerrores[] = "El nombre de usuario no puede quedar vacío";
+
+    }
+
+    if (usuariosRepetidos($_POST['usuario']) == true) {
+
+            $error = true;
+            $listaerrores[] = "El nombre de usuario no puede estar repetido";
+
+        }
+
+
+    return $listaerrores;
+
+}
 
 
 function HayErroresLogin($usuario, $password, $tipo=NULL){

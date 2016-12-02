@@ -3,7 +3,6 @@
         <h1>Información Oferta</h1>
         <table class="table table-striped table-bordered table-hover" id="resumen">
             <tr class="active">
-
                 <?php foreach ($rows as $row) {?>
 
                 <th>Descripcion</th>
@@ -13,8 +12,8 @@
                 <th>Direccion</th>
                 <th>Población</th>
                 <th>Código Postal</th>
-
             </tr>
+
             <tr>
                 <td><?php echo $row['descripcion']?></td>
                 <td><?php echo $row['nombre']?></td>
@@ -25,7 +24,6 @@
                 <td><?php echo $row['CP']?></td>
 
             </tr>
-                        <!-- Segunda tabla -->
 
             <tr class="active">
                 <th>Fecha creación</th>
@@ -45,7 +43,6 @@
                 <td><?php echo $row['seleccionado']?></td>
                 <td><?php echo $row['otrosdatos']?></td>
             </tr>
-
             <?php } ?>
 
         </table>
@@ -55,7 +52,6 @@
                 <input type="submit" NAME="aceptar" class="btn btn-primary" id="aceptar" value="Aceptar"></br></br>
                 <a href="?controllers=ctr_lista" class="btn btn-primary">Cancelar</a>
         </form>
-
     </form>
 </div>
 

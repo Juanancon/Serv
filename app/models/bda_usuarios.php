@@ -134,4 +134,29 @@ function obtenerUsuarioCodigo($Cod)
     return $usuarios;
 }
 
+/**
+ * Función para saber si un usuario inserta el mismo nombre que otro
+ * @return mixed
+ */
+function usuariosRepetidos($usuario){
+
+    $sql = 'SELECT count(*) as total FROM tbl_usuario WHERE usuario = "' .$usuario .'"';
+    $bd = Db::getInstance();
+
+    $rs=$bd->Consulta($sql);
+
+    $reg=$bd->LeeRegistro($rs);
+
+    if ($reg["total"]>0) {
+
+        return true;
+    }
+
+    else{
+
+        return false;
+    }
+
+}
+
 

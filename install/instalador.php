@@ -65,7 +65,7 @@ fclose($archivo);
 creaBD($servidor, $usuario, $password, $nombreBD);
 
 echo 'La instalación se ha ejecutado correctamente</br>';
-echo 'Puede continuar <a href="../app/indexx.php">AQUÍ</a>';
+echo 'Puede continuar <a href="../app/index.php">AQUÍ</a>';
 
    }
 }
