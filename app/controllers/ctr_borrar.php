@@ -5,6 +5,7 @@ include (HELPERS_PATH . 'filtrado.php');
 include (HELPERS_PATH . 'helper.php');
 include (MODELS_PATH . 'bda_ofertasmodelo.php');
 include (MODELS_PATH . 'bda_select.php');
+
 $rows = obtenerOfertaCodigo($_GET['Cod']);
 
 

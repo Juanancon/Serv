@@ -81,7 +81,7 @@
         <div class="form-group">
           <label for="correo" class="col-lg-5 control-label">Estado de la oferta</label>
             <div class="col-lg-5" align="LEFT">
-              <?=CreaRadio('estado', array('P'=>"Pendiente", 'R'=>"Realizando", 'S'=>'Seleccionando', 'C'=>'Cancelada'), VP('estado')) ?>
+              <?=CreaRadio('estado', array('P'=>"Pendiente", 'R'=>"Realizando", 'S'=>'Seleccionando', 'C'=>'Cancelada'), VP('estado', 'P')) ?>
             </div>
         </div></br>
 

@@ -117,7 +117,3 @@ function CreaSelectPSICO($name, $opciones, $valorDefecto=''){
 
     return $html;
 }
-
-
-
-

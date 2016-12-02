@@ -12,6 +12,7 @@ include (MODELS_PATH . 'bda_usuarios.php');
 
         $errores = array();
         include_once(VIEWS_PATH . 'view_formulario.php');
+
     } else {
 
         $errores = HayErrores();

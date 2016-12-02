@@ -10,6 +10,7 @@ if($_SESSION['tipo']=='A') {
     if (!$_POST) {
 
         include(VIEWS_PATH . 'view_borrarUsuario.php');
+
     } else {
 
         include(VIEWS_PATH . 'view_borradohecho.php');
