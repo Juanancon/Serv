@@ -43,13 +43,18 @@
         <footer align="center">
             <P>
                 <?php if ($pagina>1): ?>
-                    <a class="btn btn-primary" href="?controllers=ctr_listaUsuarios&pagina=<?=$pagina-1?>">Atrás</a>
+                    <a href="?controllers=ctr_listaUsuarios&pagina=1"><input class="btn btn-info btn-md" type="button"  value ="Primera Pagina"></a>
+                    <a href="?controllers=ctr_listaUsuarios&pagina=<?=$pagina-1?>"><input class="btn btn-primary btn-sm" type="button"  value ="Atras"></a>
                 <?php endif; ?>
 
                 <?php if ($pagina<$total_paginas) :?>
-                    <a class="btn btn-primary" href="?controllers=ctr_listaUsuarios&pagina=<?=$pagina+1?>">Siguiente</a>
+                    <a href="?controllers=ctr_listaUsuarios&pagina=<?=$pagina+1?>"><input class="btn btn-primary btn-sm" type="button"  value ="Siguiente"></a>
+                    <a href="?controllers=ctr_listaUsuarios&pagina=<?=$total_paginas?>"><input class="btn btn-info btn-md" type="button"  value ="Ultima Pagina"></a>
                 <?php endif;?>
             </P>
+
+
+
         </footer>
             <a class="btn btn-primary" href="?controllers=ctr_lista&pagina=<?=$pagina+1?>">VOLVER</a>
 

@@ -1,7 +1,11 @@
 <?php
 
-// Función que nos va a devolver el valor de un campo por defecto, dependiendo si lo escrito por
-// el usuario tiene errores o si en cambio dicho campo se dejo vacío
+/**
+ * Función que devuelve los campos al realizar un POST
+ * @param $nombreCampo
+ * @param string $valorPorDefecto
+ * @return string
+ */
 function VP($nombreCampo, $valorPorDefecto='')
 {
     if (isset($_POST[$nombreCampo]))
@@ -10,7 +14,26 @@ function VP($nombreCampo, $valorPorDefecto='')
         return $valorPorDefecto;
 }
 
-// Función para filtrar si hay un campo vacío
+/**
+ * Función que devuelve los campos al realizar un GET
+ * @param $nombreCampo
+ * @param string $valorPorDefecto
+ * @return string
+ */
+function VG($nombreCampo, $valorPorDefecto='')
+{
+    if (isset($_GET[$nombreCampo]))
+        return $_GET[$nombreCampo];
+    else
+        return $valorPorDefecto;
+}
+
+
+/**
+ * Función que nos mira si hay un campo vacío
+ * @param $campo
+ * @return bool
+ */
 function CampoVacio($campo)
 {
     if (empty(trim($campo))) {
@@ -22,31 +45,11 @@ function CampoVacio($campo)
 
 }
 
-function arrayOfertas($descripcion, $nombre, $telefono, $correo, $direccion, $poblacion, $CP, $provincia, $estado, $fechatope,
-                      $psicologo, $seleccionado, $otrosdatos )
-{
-
-    $Array = array(
-    'descripcion' => $descripcion,
-    'descripcion' => $descripcion,
-    'nombre' => $nombre,
-    'telefono' => $telefono,
-    'correo' => $correo,
-    'direccion' => $direccion,
-    'poblacion' => $poblacion,
-    'CP' => $CP,
-    'provincia' => $provincia,
-    'estado' => $estado,
-    'fechatope' => date('Y-d-m',strtotime($_POST['fechatope'])),
-    'psicologo' => $psicologo,
-    'seleccionado' => $seleccionado,
-    'otrosdatos' => $otrosdatos
-    );
-
-    return $Array;
-
-}
-
+/**
+ * Función que nos devuelve un string para mostrar en la tabla el estado de la oferta
+ * @param $estado
+ * @return string
+ */
 function devuelveEstado($estado){
 
  if ($estado == "A"){

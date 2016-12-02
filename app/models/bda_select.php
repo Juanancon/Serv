@@ -2,8 +2,10 @@
 
 include_once 'bda_sg.php';
 
-// Funciones propias de la base
-
+/**
+ * Función que nos devuelve la lista completa de las provincias
+ * @return array
+ */
     function ListaProvincias() {
 
         /*Creamos la instancia del objeto. Ya estamos conectados*/
@@ -52,7 +54,8 @@ include_once 'bda_sg.php';
  * @return string
  */
     function CreaSelect($name, $opciones, $valorDefecto=''){
-        $html="\n".'<select name="'.$name.'" class="custom-select">';
+        $html="\n".'<select name="'.$name.'" class="custom-select">'."\n";
+        $html.="<option value=''>-Elija-</option>";
         foreach($opciones as $value=>$text)
         {
             if ($value==$valorDefecto)
@@ -93,7 +96,13 @@ function CreaRadio($name, $opciones, $valorDefecto=''){
     return $html;
 }
 
-
+/**
+ * Función que nos crea el select para la vista del psicólogo
+ * @param $name
+ * @param $opciones
+ * @param string $valorDefecto
+ * @return string
+ */
 function CreaSelectPSICO($name, $opciones, $valorDefecto=''){
     $html="\n".'<select name="'.$name.'" class="custom-select" readonly>';
     foreach($opciones as $value=>$text)

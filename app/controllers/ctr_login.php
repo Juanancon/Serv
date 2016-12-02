@@ -43,7 +43,8 @@ else if ($_POST){
 
     else{
 
-        ?><div class="alert alert-danger" >
+        ?>
+        <div class="alert alert-danger" >
             El usuario no existe o los datos introducidos son incorrectos
         </div>
 

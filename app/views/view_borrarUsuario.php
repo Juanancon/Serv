@@ -10,7 +10,6 @@
     <th>Password</th>
     <th>Tipo</th>
 
-
     </tr>
     <tr>
         <td><?php echo $row['usuario']?></td>

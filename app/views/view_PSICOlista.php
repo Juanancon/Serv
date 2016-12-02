@@ -1,7 +1,7 @@
 <div class="container" align="center">
 
     <h1>Ofertas disponibles</h1>
-    <a href="?controllers=ctr_buscar>" class="btn btn-secondary" title="Busqueda avanzada" value="Busqueda"><i class="fa fa-search" aria-hidden="true"></i>    Busqueda Avanzada</a></br>
+    <a href="?controllers=ctr_buscar>" class="btn btn-secondary" title="Busqueda avanzada" value="Busqueda"><i class="fa fa-search" aria-hidden="true"></i>Busqueda Avanzada</a></br>
 
     <?php echo "Número de registros encontrados: " . $num_total_registros . "<br>";
     echo "Se muestran páginas de " . $TAMANO_PAGINA . " registros cada una<br>";
@@ -43,11 +43,13 @@
         <footer align="center">
             <P>
                 <?php if ($pagina>1): ?>
-                    <a href="?controllers=ctr_PSICOlista&pagina=<?=$pagina-1?>"><input class="btn btn-primary" type="button"  value ="Atras"></a>
+                    <a href="?controllers=ctr_PSICOlista&pagina=1>"><input class="btn btn-info btn-md" type="button"  value ="Primera Pagina"></a>
+                    <a href="?controllers=ctr_PSICOlista&pagina=<?=$pagina-1?>"><input class="btn btn-primary btn-sm" type="button"  value ="Atras"></a>
                 <?php endif; ?>
 
                 <?php if ($pagina<$total_paginas) :?>
-                    <a href="?controllers=ctr_PSICOlista&pagina=<?=$pagina+1?>"><input class="btn btn-primary" type="button"  value ="Siguiente"></a>
+                    <a href="?controllers=ctr_PSICOlista&pagina=<?=$pagina+1?>"><input class="btn btn-primary btn-sm" type="button"  value ="Siguiente"></a>
+                    <a href="?controllers=ctr_PSICOlista&pagina=<?=$total_paginas?>"><input class="btn btn-info btn-md" type="button"  value ="Ultima Pagina"></a>
                 <?php endif;?>
             </P>
         </footer>

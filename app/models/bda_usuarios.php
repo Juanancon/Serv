@@ -3,6 +3,12 @@ include_once 'bda_sg.php';
 
 /* Funciones control usuarios */
 
+/**
+ * Función que nos inserta a un usuario en la base de datos
+ * @param $usuario
+ * @param $password
+ * @param $tipo
+ */
 function insertaUsuario($usuario, $password, $tipo){
 
     $sql = 'INSERT INTO tbl_usuario VALUES("", "' . $usuario .'", "' . $password . '", "' . $tipo .'");';
@@ -11,6 +17,10 @@ function insertaUsuario($usuario, $password, $tipo){
 
 }
 
+/**
+ * Función que nos borra un usuario a partir del código
+ * @param $Cod
+ */
 function borraUsuario($Cod){
 
     $sql = 'DELETE FROM tbl_usuario WHERE Cod = "'.$Cod.'";';
@@ -20,6 +30,13 @@ function borraUsuario($Cod){
 
 }
 
+/**
+ * Función que usamos para modificar el usuario
+ * @param $Cod
+ * @param $usuario
+ * @param $password
+ * @param $tipo
+ */
 function modificaUsuario($Cod, $usuario, $password, $tipo){
 
     $sql = 'UPDATE tbl_usuario SET usuario = "'.$usuario.'", password = "'.$password.'", tipo = "'.$tipo.'"
@@ -29,17 +46,19 @@ function modificaUsuario($Cod, $usuario, $password, $tipo){
 
 }
 
+/**
+ * Función que usamos para obtener un registro de usuarios
+ * @return array
+ */
 function obtenerUsuario(){
 
-    /*Creamos una query sencilla*/
     $sql='SELECT * FROM tbl_usuario';
     $bd=Db::getInstance();
 
-    /*Ejecutamos la query ASI DEBERIA FUNCIONAR */
     $rs=$bd->Consulta($sql);
 
     $usuarios = [];
-    /*Realizamos un bucle para ir obteniendo los resultados*/
+
     while ($reg=$bd->LeeRegistro($rs)) {
 
         $usuarios[] =$reg;
@@ -51,6 +70,12 @@ function obtenerUsuario(){
 
 /* Paginación */
 
+/**
+ * Paginación de la tabla de usuarios
+ * @param $inicio
+ * @param $TAMANO_PAGINA
+ * @return array
+ */
 function obtenerUsuariosPaginacion($inicio, $TAMANO_PAGINA){
 
     $sql = 'SELECT * FROM tbl_usuario limit ' . $inicio . ',' .$TAMANO_PAGINA;
@@ -58,7 +83,7 @@ function obtenerUsuariosPaginacion($inicio, $TAMANO_PAGINA){
     $rs = $rs=$bd->Consulta($sql);
 
     $usuarios = [];
-    /*Realizamos un bucle para ir obteniendo los resultados*/
+
     while ($reg=$bd->LeeRegistro($rs)) {
 
         $usuarios[] = $reg;
@@ -68,7 +93,10 @@ function obtenerUsuariosPaginacion($inicio, $TAMANO_PAGINA){
 
 }
 
-
+/**
+ * Función para obtener el número de registros de los usuarios
+ * @return mixed
+ */
 function NRegistrosUsuarios(){
 
     $sql = 'SELECT count(*) as total FROM tbl_usuario';
@@ -76,7 +104,6 @@ function NRegistrosUsuarios(){
 
     $rs=$bd->Consulta($sql);
 
-    /*Realizamos un bucle para ir obteniendo los resultados*/
     $reg=$bd->LeeRegistro($rs);
 
 
@@ -84,18 +111,21 @@ function NRegistrosUsuarios(){
 
 }
 
+/**
+ * Obtener un usuario a partir de un código
+ * @param $Cod
+ * @return array
+ */
 function obtenerUsuarioCodigo($Cod)
 {
 
-    /*Creamos una query sencilla*/
     $sql = 'SELECT * FROM tbl_usuario WHERE Cod = "' . $Cod . '"';
     $bd = Db::getInstance();
 
-    /*Ejecutamos la query ASI DEBERIA FUNCIONAR */
     $rs = $bd->Consulta($sql);
 
     $usuarios = [];
-    /*Realizamos un bucle para ir obteniendo los resultados*/
+
     while ($reg = $bd->LeeRegistro($rs)) {
 
         $usuarios[] = $reg;

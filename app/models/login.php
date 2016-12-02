@@ -1,6 +1,11 @@
 <?php
 include_once (MODELS_PATH . 'bda_sg.php');
 
+/**
+ * Función que usamos para obtener los datos del usuario
+ * @param $usuario
+ * @return null
+ */
 function datosUsuario($usuario){
 
     $sql = 'SELECT * FROM tbl_usuario WHERE usuario = "' . $usuario . '"';
@@ -16,7 +21,12 @@ function datosUsuario($usuario){
 
 }
 
-//Función para comprobar que el logueo es correcto
+/**
+ * Función que nos guarda los datos de la sesión del usuario
+ * @param $usuario
+ * @param $password
+ * @return bool
+ */
 function login($usuario, $password){
 
     $sql = 'SELECT * FROM tbl_usuario WHERE usuario = "' . $usuario . '"';
@@ -25,8 +35,6 @@ function login($usuario, $password){
     $rs = $bd->Consulta($sql);
 
    $reg = $bd->LeeRegistro($rs);
-
-   // $reg = DatosUsuario($usuario);
 
     if ($reg /* Existe el usuario */ ){
 

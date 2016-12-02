@@ -1,29 +1,29 @@
 <?php
-include (HELPERS_PATH .'filtrado.php');
-include (HELPERS_PATH . 'helper.php');
-require (MODELS_PATH . 'bda_ofertasmodelo.php');
-include_once (MODELS_PATH . 'bda_select.php');
-$rows = obtenerOfertaCodigo($_GET['Cod']);
+if($_SESSION['tipo']=='A') {
+    include(HELPERS_PATH . 'filtrado.php');
+    include(HELPERS_PATH . 'helper.php');
+    require(MODELS_PATH . 'bda_ofertasmodelo.php');
+    include_once(MODELS_PATH . 'bda_select.php');
+    $rows = obtenerOfertaCodigo($_GET['Cod']);
 
-if (! $_POST) {
+    if (!$_POST) {
 
-    $errores = array();
+        $errores = array();
 
-    include (VIEWS_PATH . 'view_modificar.php');
+        include(VIEWS_PATH . 'view_modificar.php');
 
-}
-else{
+    } else {
 
         $errores = HayErrores();
 
 
         if ($errores) {
 
-            include (VIEWS_PATH . 'view_modificar.php');
+            include(VIEWS_PATH . 'view_modificar.php');
 
         } else if ($errores == false) {
 
-            include (VIEWS_PATH . 'view_sehamodificado.php');
+            include(VIEWS_PATH . 'view_sehamodificado.php');
 
             $descripcion = $_POST['descripcion'];
             $nombre = $_POST['nombre'];
@@ -43,10 +43,16 @@ else{
                 $fechatope, $psicologo, $seleccionado, $otrosdatos);
 
 
-            include (CTRL_PATH . 'ctr_lista.php');
+            include(CTRL_PATH . 'ctr_lista.php');
 
         }
     }
+}
+
+else{
+
+        header('location: ?controllers=ctr_login');
 
 
+    }
 

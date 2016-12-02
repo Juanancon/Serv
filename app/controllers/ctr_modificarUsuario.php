@@ -1,4 +1,5 @@
 <?php
+if($_SESSION['tipo']=='A') {
 include (HELPERS_PATH .'filtrado.php');
 include (HELPERS_PATH . 'helper.php');
 require (MODELS_PATH . 'bda_ofertasmodelo.php');
@@ -35,4 +36,11 @@ else{
 
     }
 }
+}
 
+else{
+
+    header('location: ?controllers=ctr_login');
+
+
+}

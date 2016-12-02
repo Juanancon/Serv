@@ -23,7 +23,7 @@ $listaerrores = [];
     if(!is_numeric(trim(VP('telefono'))) || CampoVacio(VP('telefono')) || VP('telefono') < 0  ){
 
         $error = true;
-        $listaerrores[] = 'El teléfono no puede estar vacío';
+        $listaerrores[] = 'El teléfono no puede estar vacío o tener caracteres incorrectos';
 
     }
 
@@ -59,7 +59,12 @@ $listaerrores = [];
     }
 
     if(isset($_POST['fechatope']) && !CampoVacio($_POST['fechatope'])){
-        $fecha = explode("/", $_POST['fechatope']);
+
+        $cadena = $_POST['fechatope'];
+        $micadena = str_replace("-", "/", $cadena);
+        $fecha = explode("/", $micadena);
+
+
         if(count($fecha) != 3 || !is_numeric($fecha[0]) || !is_numeric($fecha[1]) || !is_numeric($fecha[2])){
 
             $error = true;
@@ -94,6 +99,12 @@ $listaerrores = [];
 
     }
 
+    if($_POST['provincia'] == ''){
+
+        $error = true;
+        $listaerrores[] = "Debe elegir una provincia";
+
+    }
 
     if (is_numeric($_POST['psicologo'])) {
 
@@ -159,6 +170,13 @@ function HayErroresUsuarios(){
 		$listaerrores[] = "El campo password no puede quedar vacío";
 
 	}
+
+	if ($_POST['tipo'] == ''){
+
+        $error = true;
+        $listaerrores[] = "Elija el tipo de usuario";
+
+    }
 
 	return $listaerrores;
 }

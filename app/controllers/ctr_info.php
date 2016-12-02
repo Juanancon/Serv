@@ -1,11 +1,21 @@
 <?php
-include_once (HELPERS_PATH . 'filtrado.php');
-include_once (HELPERS_PATH . 'helper.php');
-include_once (MODELS_PATH . 'bda_ofertasmodelo.php');
-include_once (MODELS_PATH . 'bda_select.php');
+if($_SESSION['tipo']=='A' || $_SESSION['tipo']=='P') {
+    include_once(HELPERS_PATH . 'filtrado.php');
+    include_once(HELPERS_PATH . 'helper.php');
+    include_once(MODELS_PATH . 'bda_ofertasmodelo.php');
+    include_once(MODELS_PATH . 'bda_select.php');
 
-$rows = obtenerOfertaCodigo($_GET['Cod']);
+    $rows = obtenerOfertaCodigo($_GET['Cod']);
 
-include_once (VIEWS_PATH . 'view_info.php');
+    include_once(VIEWS_PATH . 'view_info.php');
+
+}
+
+else{
+
+    header('location: ?controllers=ctr_login');
+
+
+}
 
 

@@ -3,7 +3,7 @@ include 'config.php';
 // Clase encargada de gestionar las conexiones a la base de datos
 
 
-
+/* Singleton de la Base de Datos */
 Class Db {
 
     private $link;
@@ -59,7 +59,6 @@ Class Db {
     }
 
     // Ejecuta una consulta SQL y devuelve el resultado de esta.
-
     public function Consulta($sql)
     {
         $this->result=$this->link->query($sql);
@@ -68,7 +67,6 @@ Class Db {
 
 
 // Devuelve el siguiente registro del result set devuelto por una consulta.
-
     public function LeeRegistro($result=NULL)
     {
         if (! $result)

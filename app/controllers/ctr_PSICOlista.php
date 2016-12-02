@@ -1,4 +1,5 @@
 <?php
+if($_SESSION['tipo']=='P') {
 //Controlador para la vista y la paginación
 include_once  (MODELS_PATH . 'bda_select.php');
 include_once  (MODELS_PATH . 'bda_ofertasmodelo.php');
@@ -40,3 +41,12 @@ include_once (HELPERS_PATH . 'helper.php');
 /* ************ */
 
 include_once (VIEWS_PATH . 'view_PSICOlista.php');
+
+}
+
+else{
+
+    header('location: ?controllers=ctr_login');
+
+
+}
